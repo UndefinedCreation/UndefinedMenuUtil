@@ -1,3 +1,5 @@
+import com.undefinedcreation.runServer.ServerType
+
 plugins {
     java
     kotlin("jvm") version "1.9.22"
@@ -29,7 +31,7 @@ dependencies {
     compileOnly("org.spigotmc:spigot-api:1.21-R0.1-SNAPSHOT")
     implementation("org.jetbrains.kotlin:kotlin-stdlib")
 
-    implementation("com.undefined:api:0.5.56:mapped")
+    implementation("com.undefined:api:0.5.80:mapped")
 }
 
 tasks {
@@ -49,6 +51,8 @@ tasks {
         mcVersion(minecraftVersion)
 
         acceptMojangEula(true)
+
+        serverType(ServerType.PAPERMC)
     }
 }
 

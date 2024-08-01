@@ -1,4 +1,4 @@
-name: Template
+name: UndefinedMenuUtil
 version: '0.0.1'
-main: com.undefined.template.Template
+main: com.undefined.menuutil.MenuUtil
 api-version: '1.21'

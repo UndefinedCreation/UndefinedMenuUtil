@@ -1,15 +1,19 @@
-package com.undefined.template
+package com.undefined.menuutil
 
 import com.undefined.api.UndefinedAPI
 import org.bukkit.plugin.java.JavaPlugin
 
-class Template : JavaPlugin() {
+class MenuUtil : JavaPlugin() {
 
-    lateinit var undefinedAPI: UndefinedAPI
+    companion object {
+        lateinit var undefinedAPI: UndefinedAPI
+    }
 
     override fun onEnable() {
         // Plugin startup logic
         undefinedAPI = UndefinedAPI(this)
+
+        MenuUtilCommand()
 
     }
 
